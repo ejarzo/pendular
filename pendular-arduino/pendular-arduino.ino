@@ -242,7 +242,7 @@ void loop()
   //  Serial.println(v2);
 
   //  return;
-  tcaselect(1);
+  tcaselect(0);
   mpu1.update();
 
   tcaselect(2);
@@ -255,7 +255,7 @@ void loop()
   if ((millis() - timer) > 10)
   {
 
-    printMPUData(1);
+    printMPUData(0);
     Serial.print(" ");
     Serial.print(light2);
     Serial.print(" ");
